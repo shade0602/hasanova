@@ -49,10 +49,24 @@ p {
 ===================== */
 
 header {
+    width: 100vw;
     background-color: rgb(255, 10, 222);
-    padding-bottom: 1em;
-    padding-top: .5em;
+    background-image: url(../img/bg1.jpg), linear-gradient(steelblue, pink);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3em;
+    padding-top: 2.5em;
     color: #fff;
+}
+
+@media (min-width: 700px) {
+    header {
+        height: 50vh;
+        padding-top: 5em;
+        padding-bottom: 2em;
+    }
+    
 }
 
 .container {
