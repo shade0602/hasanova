@@ -87,6 +87,7 @@ li {
     background-color: rgb(255, 10, 222);
     color: #fff;
     font-size: 1.2em;
+    font-weight: 550;
     padding: .6em 0;
     outline: white .1em solid;
     outline: .15em solid #fff;
@@ -100,8 +101,10 @@ a {
 
 li:hover,
 li:focus {
-    outline: .15em solid #fff;
+    outline: .155em solid #fff;
     outline-offset: -.45em;
+
+    transition: ease-in-out 100ms;
 }
 
 /* footer
