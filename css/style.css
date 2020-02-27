@@ -26,7 +26,8 @@ img {
 
 h1 {
     font-size: 2em;
-    margin-top: 1em;
+    padding-top: .6em;
+    padding-bottom: 2.5em;
 }
 
 h2 {
@@ -45,6 +46,64 @@ p {
     text-align: left;
 }
 
+/* navigation
+==========================*/
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding-top: .9em;
+    margin: 0 .75em;
+    font-weight: 400;
+
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: rgb(243, 205, 212);
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: rgb(243, 205, 212);
+
+    position: absolute;
+    top: .6em;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    nav li {
+        padding-top: 2em;
+        margin: 0 3em;
+        font-weight: 500;
+    }
+
+    h1 {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+}
+
 /* header 
 ===================== */
 
@@ -55,18 +114,13 @@ header {
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
-    padding-bottom: 3em;
-    padding-top: 2.5em;
     color: #fff;
 }
 
 @media (min-width: 700px) {
     header {
-        height: 50vh;
-        padding-top: 5em;
-        padding-bottom: 2em;
+        height: 50vh;   
     }
-    
 }
 
 .container {
@@ -77,12 +131,12 @@ aside {
     margin-top: 2em;
 }
 
-ol {
+aside ol {
     list-style: none;
     padding-left: 0;
 }
 
-li {
+aside li {
     margin: .5em 1.2em;
     background-color: rgb(255, 10, 222);
     color: #fff;
@@ -93,14 +147,14 @@ li {
     outline: .15em solid #fff;
 }
 
-a {
+aside a {
     text-decoration: none;
     color: unset;
     padding: .5em 4em;
 }
 
-li:hover,
-li:focus {
+aside li:hover,
+aside li:focus {
     outline: .155em solid #fff;
     outline-offset: -.45em;
 
