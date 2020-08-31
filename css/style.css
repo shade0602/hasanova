@@ -80,15 +80,6 @@ nav a:hover {
     border-bottom: rgb(255, 10, 222) 2px solid;
 }
 
-/* @media (max-width: 870px) {
-    nav ul {
-        display: inline-flex;
-        padding: 0;
-        margin-top: 0.8em;
-        letter-spacing: 0em;
-    }
-} */
-
 @media (max-width: 870px) {
     nav ul {
         display: inline-flex;
@@ -180,6 +171,10 @@ section {
         flex-direction: column;
         width: 95%;
     }
+
+    .one {
+        margin-bottom: 0.5em
+    };
 
     p {
         margin: .5em;
